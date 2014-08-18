@@ -19,28 +19,21 @@
 				{{#post}}	
 				<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
 					<h1 class="post-title">{{title}}</h1>
+					<br>
 					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished">
 						<span class="datetime-full">{{date format="DD.MM.YYYY"}}</span>
 					</time>
-					<div class="post-info">
-						{{#if tags}}
-							<div class="tags">
-							<i class="fa fa-tags fa-lg"></i> {{tags separator=" | "}}
-							</div>
-						{{/if}}
-					</div>
+					
 					<div class="hrule"></div>
 					<div class="postContent">
 						{{content}} 
 					</div>
-				</article>
-				
-				<!--- Sharing Section --->
-				{{> share }}
-
-				<!--- Comment sections - using DISQUS as default --->
+					<!--- Sharing Section --->
+						{{> share }}
+					<!--- Comment sections - using DISQUS as default --->
 				{{> comment }}
-				
+				</article>
+					
 				{{/post}}	
 			</div>
 		</main>
