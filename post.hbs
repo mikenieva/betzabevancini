@@ -17,6 +17,7 @@
 			<div class="post-entry">
 				<!--- POST CONTENT --->
 				{{#post}}
+				<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
 					{{#contentFor "meta"}}
             			<meta property="og:type" content="article" />
             			<meta property="og:url" content="{{url absolute="true"}}" />
@@ -30,7 +31,6 @@
             			<meta property="fb:profile_id" content="betzabe.vancini" />
             			<meta property="fb:admins" content="mikenieva" />
         			{{/contentFor}}
-				<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
 					<h1 class="post-title">{{title}}</h1>
 					<br>
 					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished">
