@@ -34,6 +34,9 @@
 					<h1 class="post-title">{{title}}</h1>
 					<br>
 					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished">
+						<span class="fa-stack header-menu-button-icon">
+							<i class="fa fa-calendar fa-stack-1x"></i>
+						</span>
 						<span class="datetime-full">{{date format="DD.MM.YYYY"}}</span>
 					</time>
 					<!--- Sharing Section --->
@@ -45,6 +48,7 @@
 					<br>
 					<!--- Sharing Section --->
 						{{> share }}
+					<br>
 					<br>
 					<!--- Comment sections - using DISQUS as default --->
 				{{> comment }}
